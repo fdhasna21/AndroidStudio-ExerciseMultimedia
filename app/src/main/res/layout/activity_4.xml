@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fdhasna21.multimedia.Activity4"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/layoutPadding">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center">
+
+        <ImageSwitcher
+            android:id="@+id/activity4_image"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@drawable/bg_drawable_corner"
+            android:layout_gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/activity4_next_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_next"
+            style="@style/AppTextAppearance.Button"
+            android:layout_gravity="center_vertical|end"/>
+
+        <ImageButton
+            android:id="@+id/activity4_prev_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_next"
+            style="@style/AppTextAppearance.Button"
+            android:layout_gravity="center_vertical|start"
+            android:rotation="180"/>
+
+    </FrameLayout>
+    <Button
+        android:id="@+id/activity4_select_btn"
+        android:text="select image"
+        style="@style/AppTextAppearance.Button"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

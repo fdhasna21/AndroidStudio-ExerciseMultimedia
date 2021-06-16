@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AndroidStudio_ExerciseAboutMultimedia" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#ef5350</item>
+        <item name="colorPrimaryVariant">#b61825</item>
+        <item name="colorOnPrimary">#ff867a</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#f98b00</item>
+        <item name="colorSecondaryVariant">#c05d00</item>
+        <item name="colorOnSecondary">#ffbc45</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+        <!-- Customize your theme here. -->
+        <item name="android:theme">@style/MyTheme</item>
+        <item name="android:fontFamily">@font/lato</item>
+    </style>
+</resources>

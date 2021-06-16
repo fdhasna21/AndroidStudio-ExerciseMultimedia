@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fdhasna21.multimedia.MainActivity"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/layoutPadding"
+    android:showDividers="middle"
+    android:divider="@drawable/divider">
+
+    <Button
+        android:id="@+id/button1"
+        android:text="Show Images"
+        style="@style/AppTextAppearance.Button"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:text="Select an Gallery Image"
+        style="@style/AppTextAppearance.Button"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:text="Select Multiple Gallery Images"
+        style="@style/AppTextAppearance.Button"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/button5"
+        android:text="Mediaplayer"
+        style="@style/AppTextAppearance.Button"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/button6"
+        android:text="Youtube Player"
+        style="@style/AppTextAppearance.Button"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/button7"
+        android:text="Weather"
+        style="@style/AppTextAppearance.Button"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

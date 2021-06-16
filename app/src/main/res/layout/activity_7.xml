@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fdhasna21.multimedia.Activity7.Activity7"
+    android:layout_margin="@dimen/layoutPadding">
+
+    <LinearLayout
+        android:id="@+id/activity7_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp">
+        <ImageView
+            android:id="@+id/activity7_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="4dp"
+            android:src="@mipmap/logo_round" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/activity7_icon">
+
+            <TextView
+                android:id="@+id/activity7_temp"
+                style="?attr/textAppearanceHeadline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:text="19"
+                android:textColor="@color/default_gray"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/activity7_celcius"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/activity7_celcius"
+                style="?attr/textAppearanceHeadline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@id/activity7_temp"
+                android:text="°C"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/activity7_temp"
+                app:layout_constraintTop_toTopOf="@id/activity7_temp"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/activity7_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City"
+        android:layout_centerHorizontal="true"
+        style="?attr/textAppearanceHeadline4"
+        android:layout_below="@id/activity7_top"/>
+
+    <TextView
+        android:id="@+id/activity7_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/activity7_city"
+        android:layout_marginTop="4dp"
+        style="?attr/textAppearanceSubtitle1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity7_desc"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="12dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <TextView
+            android:id="@+id/activity7_sunrise"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            android:text="Sunrise"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:text="|"
+            android:textAlignment="center"
+            android:layout_marginHorizontal="4dp"/>
+
+        <TextView
+            android:id="@+id/activity7_sunset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            android:text="Sunset"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+</RelativeLayout>
