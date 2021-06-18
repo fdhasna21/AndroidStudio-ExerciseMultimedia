@@ -8,6 +8,6 @@ interface Activity7Interface {
     @GET("weather")
     fun getWeather(
         @Query("q") location:String,
-        @Query("units") unit:String
+        @Query("units") unit:String,
     ) : Call<ResponseAPI>
 }
